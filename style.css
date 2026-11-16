@@ -1,0 +1,202 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #17243a;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: #142b4a;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar h2 {
+  color: #66d9ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #66d9ff;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #142b4a, #2465a8);
+  color: white;
+}
+
+.tag {
+  color: #66d9ff;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+.primary-btn {
+  display: inline-block;
+  background: #13a8d8;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 7px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.primary-btn:hover {
+  background: #087da8;
+}
+
+.section {
+  padding: 65px 7%;
+  scroll-margin-top: 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #142b4a;
+  font-size: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px #142b4a12;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #1765a5;
+  margin-bottom: 12px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #087da8;
+  font-weight: bold;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 550px;
+}
+
+th, td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #e5eaf0;
+}
+
+th {
+  background: #1765a5;
+  color: white;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact form {
+  max-width: 550px;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d5dce6;
+  border-radius: 7px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+footer {
+  text-align: center;
+  background: #142b4a;
+  color: white;
+  padding: 25px;
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 75px 20px;
+  }
+}
